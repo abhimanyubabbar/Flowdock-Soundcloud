@@ -1,13 +1,15 @@
 (function(){
 
   var express = require('express');
+  var url = require('url');
   var mainRouter = express.Router();
   var bunyan = require('bunyan');
   var logger = bunyan.createLogger({name: 'main-route'});
 
-
   mainRouter.get('/', function(req, res){
-    res.render('index.html');
+    var parts = url.parse(req.url, true);
+    logger.info(parts);
+    res.render('index.html')
   });
 
   mainRouter.get('/ping', function(req, res){
