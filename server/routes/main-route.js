@@ -9,7 +9,7 @@
   mainRouter.get('/', function(req, res){
     var parts = url.parse(req.url, true);
     logger.info(parts);
-    res.render('index.html')
+    res.render('main.html')
   });
 
   mainRouter.get('/ping', function(req, res){

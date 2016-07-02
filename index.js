@@ -14,6 +14,7 @@ var mainRoute = require('./server/routes/main-route');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+app.use('/', express.static(path.join(__dirname,'/public')));
 app.set('views', __dirname + '/public');
 app.engine('html', engines.mustache);
 app.set('view engine', 'html');

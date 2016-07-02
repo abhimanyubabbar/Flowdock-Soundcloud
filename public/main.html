@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="flowdock-soundcloud">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-controller="LandingController as landingController">
+<h1>Flowdock-Soundcloud Integration</h1>
+<hr>
+<div>
+    <button ng-click="landingController.authorize()">Flowdock Update</button>
+    <button>Soundcloud Update</button>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="service/flowdockService.js"></script>
+    <script src="controller/landingController.js"></script>
+</div>
+</body>
+</html>
