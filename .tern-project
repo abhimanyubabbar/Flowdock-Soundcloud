@@ -1,0 +1,14 @@
+{
+  "loadEagerly": [
+    "./js/*.js",
+    "./js/*.jsx",
+    "./node_modules/bunyan/lib/*.js",
+    "./node_modules/express/lib/*.js",
+    "./node_modules/react/**/*.js",
+  ],
+
+  "plugins": {
+    "node": {}
+  }
+}
+
